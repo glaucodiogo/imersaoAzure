@@ -315,3 +315,35 @@ Vnet Peering
     Fatores de consumo:
         - VNET peering da mesma região 
         - é necessário 2 redes virtuais , depois clicamos 
+
+Service EndPoint
+
+Azure Private Link - internamente se comunica através de ip interno 
+
+Firewall básico do azure - Network security groups 
+    - a liberaçaõ da porta sobrescreve o firewall do SO 
+
+Route tables 
+    - Regras default system routes não podem ser alteradas
+    0.0.0.0/0 qualquer ip que passar uma subnet envia para o firewall
+
+    Quando tiver empate de regras, seguirá uma prioridade 
+    1 - UDR 
+    2 - BGP routes 
+    3 - System routes 
+
+Azure Dns Zones 
+    métodos:
+        - dns zones é publico 
+        - privite dns zones é 
+    é possível provisionar dns por 0.50 dolares por mês 
+
+
+Azure Bastion 
+    - Permite comunicar com a máquina virtual sem precisar utilizar o RDP que não é recomendado
+
+Azure Firewall 
+    - A microsoft tem um firewall também , auto escalável permite proteger toda a saída da minha rede 
+
+O que uma rede hub spoke?
+Realizar o projeto 
