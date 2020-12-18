@@ -94,3 +94,9 @@ Como usar  calculadora do azure (Dicas)
 - As horas na VPN, interessante desligar a vpn qunado não usada
 - Configurar numero 1 pelo menos na calculadora para montar uma proposta
 - Usar ip público também com uma configuração de x gigas de tráfego 
+
+Com essas propostas é possível repensar a arquitetura do cliente e enviar uma proposta ao cliente 
+
+TCO - é possível jogar informações da sua máquina fisica e prever quais serviços iria atender na nuvem e o custo.
+
+É possível ficar mais caro se não fizer uma otimização, ajuste de arquitetura. Por este motivo é importante a existência de profisionais arquitetos de nuvem 
