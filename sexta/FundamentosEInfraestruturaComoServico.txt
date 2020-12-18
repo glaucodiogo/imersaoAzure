@@ -166,5 +166,16 @@ Microsoft Cloud Adoption framework for azure
  - Define Strategy (Começar com pequenos projetos)
  - Plan (Capacite a mão de obra)
  - Ready (Primeiro começa pela rede, assinatura ,máquina)
- - Adopt  
- - Govern / Manage
+ - Adopt  (Inovação, migração)
+ - Govern / Manage (Pensar em governança, gerenciamento)
+
+
+------------Infraestrutura como serviço -
+ IAAS : aplicação,data,gerenciamento do servidor
+ PAAS : preocupo com aplicação , data 
+
+Guia para mmigração , boas práticas 
+
+Resource group 
+
+
