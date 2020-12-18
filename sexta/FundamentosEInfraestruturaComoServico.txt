@@ -176,6 +176,36 @@ Microsoft Cloud Adoption framework for azure
 
 Guia para mmigração , boas práticas 
 
-Resource group 
+Resource group , podemos organizar por tipo de serviço e ambiente 
+
+Recomendação de uso de nomes em boas práticas : https://docs.microsoft.com/pt-br/azure/cloud-adoption-framework/
+
+RG = resource group 
+
+Criando um : pode-se usar tags (project,centro de custo,ambiente) para facilitar relatórios futuramente, quando chegar as cobranças
+
+L = Locks 
+É possível por locks para evitar que alguém apague algum recurso sem ter permissão 
 
 
+-----Virtual Networks
+O objetivo da azure, é caso vocÊ tem uma rede on premise leve-a para virtual network 
+
+Azure oferece facilmente loadbalacing, ddos protection,vpm gateway (fazer uma rede conversar com outra rede)
+
+*é possível fazer uma conexão direta com um datacenter chamado de express route
+
+VNET = virtual Networks
+
+limite por resource group = 1000
+
+Caso alguem invada uma rede, ele é direcionado para uma área isolada,protegendo os dados
+Boas práticas: 
+     - Definir nomenclatura
+     - Definir região 
+     - Definir Address space
+    - Definir segmentação
+    - DNS
+    - rotas 
+    - segurança 
+    - VPN
