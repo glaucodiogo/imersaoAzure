@@ -1,0 +1,96 @@
+Conceitos básicos: Módulo 1 e 2 do curso azure expert
+
+1 - Azure é open, criado do kubernetes e python trabalham na microsoft.
+2 - Plataforma foca muito em ter um ambiente híbrido, pode crescer sobre demanda 
+
+Serviços bases Azure
+    - App Services 
+    - Data Services 
+    - Infrastructure Services
+
+Componentes : 
+    - Cada páis tem uma ou mais regiões no mundo  
+    Region Pairs - é possível conectar regiões com no minimo 300 miles de separação
+    Cade região tem sua redundância    
+    Componente qeu contém varios datacenters conectados por uma rede de baixa latência
+
+
+Availability zones -  proteção em caso falhe alguma zona
+Region Pairs 
+
+
+Availabilit sets 
+    - Fault domains (FD) : aciona em caso de um datacenter falhar
+    - Update domains (UD)
+
+Availaility Zones:  
+    Recurso que tem objetivo de separar diferentes data center numa mesma região 
+
+Availabilit set, é composto por qual seguintes componentes :
+    fault domains 
+
+
+
+
+----- resource group
+    - é um container lógico que usado para provisionar os recursos : vm,storage,web and db.
+
+Azure resouce manager(ARM): é composta por sdk para conectar soluções, autenticação, aplicativo mobile,
+  é a Infrastructure de código do azure, automatiza toda estrutura divida em availibility zones nativo
+
+
+Azure subsscriptions 
+    - prover autenticação e e autorização de acesso
+    - é possível segmentar todo o acesso de recurso e limitar o billing (quanto irei pagar)
+
+Management Groups 
+    - multi subsscription management 
+    - Alto nivel de gerenciamento para mega empresas 
+    - suporta 6 níveis de hierarquia 
+    - é possível conectar as subscrições ( ex: filiais , conforme for abrindo, da para ir ligando uma na outra)
+
+---------------------------------------------
+Contratação e precificação do azure  
+    Opções 
+        - Enterprise agreement EA (Contas gigantes, onde as empresas contratam créditos durante o ano, negociando direto com a microsoft
+        pode chegar até 40% em relação ao PAYG)
+        - Direct Web PAYG (implica limite de cartão de crédito)
+        - Partners CSP (Existe um parceiro da microsoft, revendedor da microsoft, parceiro cuida dos impostos e não tem limite de cartão de crédito) 
+Alguns dão suporte também
+
+Ofertas de contratação 
+    - Free trial
+    - PaYG , pago por utilização 
+    - Member offers(student, msdn subscription)
+
+Orçamento Recurso e Consumo - Vai ajudar a determinar quanto iremos gastar
+
+*Pagamos por hora e Armazenamento(disco)
+Fatores de consumo: 
+    - Tipo de recurso 
+    - Oferta de serviço 
+    - Localização 
+    - HOra de computação
+    - Armazenamento
+    - Transferência de banda(Out) Tráfego, tudo que enviamos para o azure não pagamos, mas a saída do datacenter é cobrada também 
+
+Estimatica de consumo 
+    - Calculadora de preço (Azure pricing) pública 
+    - Calculadora de custo total de propriedade(TCO Calulator) - muito importante quando iremos migrar 
+    - Análise de estimativas - Azure MIgrate, ela consegue conectar no servidor e analisa os problemas possíveis que podem ocorrer ao migrar a nuvem, é gratuita
+        Excelente idéia para testar no servidor do supermercado
+
+Otimização de consumo 
+    - Modelo de contratação e oferta, ta bombando as vagas azure arquitect 
+    - Mais comum é fazer tunnig, simples ajustes de parâmetros 
+    - Automatizar o desligamento e ligamento da máquina para evitar consumo 
+    - Azure Reservations-RIS (Contrato de 1 a 3 anos com 40% de desconto)
+    - Lvar licenças(Azure beneficios)
+
+
+Como usar  calculadora do azure (Dicas)
+- Normalmente transações nos dicos, de muita leitura 10000
+- Muita gente esquece de considerar a saída de dados 
+- As horas na VPN, interessante desligar a vpn qunado não usada
+- Configurar numero 1 pelo menos na calculadora para montar uma proposta
+- Usar ip público também com uma configuração de x gigas de tráfego 
