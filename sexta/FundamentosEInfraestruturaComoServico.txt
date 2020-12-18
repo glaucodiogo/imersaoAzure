@@ -278,3 +278,20 @@ https://portal.azure.com/?l=en.en-us#blade/Microsoft_Azure_FileStorage/FileShare
 Basta criar o serviço e rodar um script no SO para mapear e se conectar no storage
 
 *Para fazer backup é legal usar o storage blob por ser mais barato
+
+----Azure File Sync 
+Seria a evolução do Azure file server, porque tem um super cache
+Tem backup e disaster recovery made simple 
+
+Boa prática, acima de 2 teras azure files não é a melhor solução.
+Pode-se ter 20 file sync service per region 
+
+--------------Azure Point-To-Site (P2P) VPN
+Modelos de implementação:
+    - P2S(point to site): Usa a porta 443 SSL/TLS - recomendado até 50 usuários, 1 gataway para uma rede virtual 
+Precificação de Gateway:
+    - Região de provisionamento
+    - Tipo de Gateway VPN(FullTime)
+    - Quantidade de túneis
+    Para implementar o gateway, é preciso de uma subnet, configurar address pool(ip que o cliente irá receber)
+Com esta configuração , será necessário gerar um certificado e baixar o client vpn. Utilizava na maxprocess
