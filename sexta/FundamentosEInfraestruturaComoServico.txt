@@ -100,3 +100,71 @@ Com essas propostas é possível repensar a arquitetura do cliente e enviar uma 
 TCO - é possível jogar informações da sua máquina fisica e prever quais serviços iria atender na nuvem e o custo.
 
 É possível ficar mais caro se não fizer uma otimização, ajuste de arquitetura. Por este motivo é importante a existência de profisionais arquitetos de nuvem 
+
+
+
+-----Suporte de disponibilidade Azure------
+
+Basic - disponível na conta 
+Developer - tem 1 engenheiro de suporte para apoiar caso não seja ambiente de produção somente email
+Standard - tem suporte por email e telefone de um engenheiro
+Profissional Direct - Ambientes totalmente dependentes , suporte 24x7 via email e telefone 
+
+https://azure.microsoft.com/pt-br/support/plans/
+
+Em orçamento acima de 50 servidores, já considera pelo menos suporte standard 
+
+Alternativas de suporte : 
+    - MSDN 
+    - Stack over flow 
+    - Server Fault 
+    - Azure general feedback
+    - @AzureSupport  
+
+SL calculator : é possível calcular como todo a disponibilidade 
+É possível saber qual impacto 
+
+
+----Gerenciamento do azure ( ferramentas para facilitar a gestão)
+
+Azure portal 
+Azure power shell 
+CLI 
+Azure cloud shell 
+Azure mobile app 
+Azure rest api (posso criar meu próprio sistema para gerenciar)
+
+
+---Estratégias implantação e migração para o Azure
+
+98% dos cenários em empresa são on premises
+* pior estratégia seria pegar a arquitetura local e migrar igual para nuvem, pior erro 
+* erro mais comum é o assement
+
+1 - primeiro passo Usar estratégia lift and shift  (Rehost)
+ O que fazer? 
+    -Conhecer o ambiente 
+    -Otimizar(tunning), o mais correto seria estudar a arquitetura atual ,memória,uso de disco,etc. 
+Ex: quantos servidores de fato são usados no processamentos
+
+Em resumo, primeiro passo é fazer Virtual Machines 
+2 - Modernização (Refactor)
+    - Containers, ex: ao invés de contrar um vm e instalar o apache dentro, eu subo um container com o apache
+    - App,Data & Ai services (Analisar bibliotecas,conhecer a camada de aplicação)
+
+3 - Rearchitect
+    Deve-se caminhar para aplicação com arquitetura microserviços
+
+4 - Cloud-native 
+    A aplicação já nasce na nuvem , onde irei aproveitar alto nivel de disponibilidade
+
+5 - SAAS 
+
+Cloud Operation Model - contém a jornada para identificar o ponto onde está e o ponto onde seria legal chegar
+
+Microsoft Cloud Adoption framework for azure 
+ - Define Strategy (Começar com pequenos projetos)
+ - Plan (Capacite a mão de obra)
+ - Ready (Primeiro começa pela rede, assinatura ,máquina)
+ - Adopt  
+ - Govern / Manage
