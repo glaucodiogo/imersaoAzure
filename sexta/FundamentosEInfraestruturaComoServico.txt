@@ -294,4 +294,9 @@ Precificação de Gateway:
     - Tipo de Gateway VPN(FullTime)
     - Quantidade de túneis
     Para implementar o gateway, é preciso de uma subnet, configurar address pool(ip que o cliente irá receber)
-Com esta configuração , será necessário gerar um certificado e baixar o client vpn. Utilizava na maxprocess
+Com esta configuração , será necessário gerar um certificado e baixar o client vpn. 
+
+Levantamento da implantação :
+    - Qual é o tipo de dispositivo de VPN? 
+    - Tipo de gateway utilizado?VPN?Express route?
+    - E o tipo de roteamento
