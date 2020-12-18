@@ -300,3 +300,18 @@ Levantamento da implantação :
     - Qual é o tipo de dispositivo de VPN? 
     - Tipo de gateway utilizado?VPN?Express route?
     - E o tipo de roteamento
+
+    Remote Desktop Connection Manager - software para gerenciar várias conexões 
+
+Express Route Circuit
+    -Equinix , azure private peering for virtual networks , conhecido também com direct connection. 
+    A empresa compra um equipamento 
+
+Vnet Peering  
+    - Conexão entre regiões 
+    - Conexão na mesma região       
+
+    Não suporta load balancing
+    Fatores de consumo:
+        - VNET peering da mesma região 
+        - é necessário 2 redes virtuais , depois clicamos 
