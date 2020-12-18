@@ -200,12 +200,76 @@ VNET = virtual Networks
 limite por resource group = 1000
 
 Caso alguem invada uma rede, ele é direcionado para uma área isolada,protegendo os dados
+
 Boas práticas: 
-     - Definir nomenclatura
-     - Definir região 
-     - Definir Address space
+    - Definir nomenclatura
+    - Definir região 
+    - Definir Address space
     - Definir segmentação
     - DNS
     - rotas 
     - segurança 
     - VPN
+
+Recomendado deixar a vnet na mesma região das máquinas, se não as máquinas não se comunicam. 
+
+--Virtual machine 
+Tipos: 
+    - b,dsv,ds,d,av,a0-7 General purpose 
+    - fsv2,fs,f compute optimized
+    - esv3,ev3,M,GS,G,DSv2,DS,Dsv  
+    https://docs.microsoft.com/pt-br/azure/virtual-machines/sizes
+
+Availability sets (é uma flag sem cust,deve-se ativar antes de criar a máquina)    
+
+VM - toda máquina criada no azure, tem 127 ca a labor
+
+Shared Disk = para usar máquinas como cluster é necessário ativar esta opção
+
+
+4 tipos de Storage do azure : 
+    - azure container: recomendado para dados que eu preciso acessar,textos,videos,etc blobs
+    - azure files: file server 100% em nuvem 
+    - azure tables: ideal para dados não relacionais 
+    -azure queues: mensageria 
+
+Performance azure Storage
+    - standard : somente para arquivos e máquina virtual 
+Replicação azure storage 
+    - LRS: localmente
+    - GRS : geolocalizao
+Camadas azure storage
+    - HOT: muito acessados
+    - COOL: dados poucos acessados
+    - Archive(blob): dados para backup. Deve-se evitar alto acesso porque se não sai caro 5$ por acesso por exemplo
+
+Shared access signatures 
+    Chaves de acesso, consigo disponibilizar o acesso para um dev, então consigo gerar um token e determinar até um tempo de acesso e dia 
+
+
+Boas práticas de storage account
+    - Definir região
+    - Definir Armazenamento General V2 
+    - Definir tipo de Replicação
+    
+Fatores de consumo 
+    Regiao de Armazenamento
+    tipo de storage account 
+    tipo de nivel desempenho 
+    capacidade de armazenamento 
+    tipo de aplicação 
+    transações(list,read,write)
+    saída de dados(data egress)
+
+Azure Files 
+    - Suporta Ad authentication
+    - Suporta criptografia em transito 
+    Boas práticas: 
+        - Criar um storage account por unidade 
+        - Criar compartilhamentos
+        - Limites de armazenamento files 
+        - Regras de firewall/ACLs para porta TCP 445
+        - Desativar acesso público
+
+Implementar o azure files        
+https://portal.azure.com/?l=en.en-us#blade/Microsoft_Azure_FileStorage/FileShareMenuBlade/overview/storageAccountId/%2Fsubscriptions%2F5e04b93f-e742-4f5f-8724-4a7650df78ed%2Fresourcegroups%2FRG-TAE-STORAGE%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fsaefles/path/fs-imersao/protocol/SMB
