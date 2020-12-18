@@ -273,3 +273,8 @@ Azure Files
 
 Implementar o azure files        
 https://portal.azure.com/?l=en.en-us#blade/Microsoft_Azure_FileStorage/FileShareMenuBlade/overview/storageAccountId/%2Fsubscriptions%2F5e04b93f-e742-4f5f-8724-4a7650df78ed%2Fresourcegroups%2FRG-TAE-STORAGE%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fsaefles/path/fs-imersao/protocol/SMB
+
+
+Basta criar o serviço e rodar um script no SO para mapear e se conectar no storage
+
+*Para fazer backup é legal usar o storage blob por ser mais barato
