@@ -347,3 +347,6 @@ Azure Firewall
 
 O que uma rede hub spoke?
 Realizar o projeto 
+https://github.com/Azure/azure-quickstart-templates/tree/master/101-hub-and-spoke-sandbox
+
+É possível usar essa estrutura para pequenas e médias empresas, com serviços compartilhados, trazendo economia 

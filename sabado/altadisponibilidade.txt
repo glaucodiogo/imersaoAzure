@@ -1,0 +1,30 @@
+Opções de load balancer que permite garantir alta disponibilidade
+    reability zone = o azure consegue escalonar a vm dentro da mesma regiao, mas em várias zonas
+    availibility set = compartilha as vms em mesmo racks para aumentar a disponibilidade
+
+Backend Pool
+
+
+Exercicios: https://github.com/maiaacademy/imersao-azure-expert
+
+Frontend IP = ip que o cliente irá acessar 
+
+Application Gateway, consigo controlar carga, rescrever o header de uma requisição, entre outras coisas .
+Ideal para microserviços
+
+WAF = web Application firewall policy 
+
+Posso associar waf com azure sentinel para capturar logs, e pagar apenas por storage, excelente para montar dashboard e por para a equipe visualizar
+
+
+Dvwa vulnerable web application = plataforma pra gente poder simular pentest , posso testar com o ativação do waf para proteção 
+
+https://danieldonda.com/2019/09/11/damn-vulnerable-web-application-dvwa/
+
+Ferramenta auxiliar para várias conexões: https://remotedesktopmanager.com/home/thankyou/rdmfreesetup
+
+
+BEneficios 
+
+Escala vertical, é aumentar recursos 
+Escala horizontal é provicionar outras instancias , cluster de forma rápida e automatizada 
