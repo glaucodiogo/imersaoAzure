@@ -28,3 +28,23 @@ BEneficios
 
 Escala vertical, é aumentar recursos 
 Escala horizontal é provicionar outras instancias , cluster de forma rápida e automatizada 
+
+Auto scale podemos colocar o mínimo e o máximo conforme demanda de requisições 
+
+Custom Script extensions : São scripts para automatizar alguns provisionamentos de máquinas
+
+Virtual machine scale: é a ferramenta no azure que nos ajuda a configurar o mínimo e o máximo 
+Scale out = reduzir 
+scale in = aumentar 
+
+Para criar as instancias, basta acessar no portal Virtual machine scale sets. 
+é super interessante utilizar essa forma de scalar juntamente com CI e CD para entrega do software
+
+
+App Web Service: Não precisamos gerenciar a camada de sistema operacional, me preocupo apenas com a aplicação
+Dentro dele tem o app service plan, que é como se fosse um armazenamento memória 
+
+Deployment slots = aplicamos uma esteira dentro do appservices (posso ter o stage e production)
+
+Vai chegar um momento em que a aplicação irá precisar de um banco de dados, este banco roda somente em máquinas vpm
+
