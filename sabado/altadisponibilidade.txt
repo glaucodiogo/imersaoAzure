@@ -48,3 +48,38 @@ Deployment slots = aplicamos uma esteira dentro do appservices (posso ter o stag
 
 Vai chegar um momento em que a aplicação irá precisar de um banco de dados, este banco roda somente em máquinas vpm
 
+
+------Container 
+    - É uma forma de empacotamento do software
+
+Comandos básicos  Client 
+docker build 
+docker pull 
+docker run 
+
+Docker Host
+
+Registry
+
+NO azure temos o componente azure container instances (ACI) junto com container groups
+.eastus2.azurecontainer.io
+
+-----kubernetes 
+Aks - kubernetes gerenciado
+composto por:
+    - nodes = instancia 
+    - pods = container
+    - manifest = .yaml 
+
+
+----projeto 2 criar aplicação no kubernetes
+
+----Terraform 
+    - opensource e estável , gasta pouco dinheiro 
+
+Diferença entre terraform e ansible . O terra provisiona ambiente e o ansible faz gestão ,instalr programas
+
+Packer = gera imagem default para disponibilizar 
+
+O que acha de entregar 30 entregas com o mesmo número de devs ?
+A infraestrutura proporciona essa elevação de entrega
