@@ -82,4 +82,15 @@ Diferença entre terraform e ansible . O terra provisiona ambiente e o ansible f
 Packer = gera imagem default para disponibilizar 
 
 O que acha de entregar 30 entregas com o mesmo número de devs ?
-A infraestrutura proporciona essa elevação de entrega
+A infraestrutura proporciona essa elevação de entrega, garante auditoria , da pra saber quem alterou uma porta , porque mudou ela etc.
+
+gitignore.io - para evitar que as chaves entram no controle de versão 
+    ex: A amazon identifica que a chave aparece no codigo e com isso trava tudo bloqueia até o cartao de crédito 
+
+A sacada é manter as chaves no blob do azure
+
+
+-----Infraestrutura como codigo com ARM 
+    - é possível utilziar template e provisionar facilmente com código
+é possível usar o link abaixo para gerar diagrama da estrutura 
+http://armviz.io/
