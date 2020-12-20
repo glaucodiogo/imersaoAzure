@@ -53,3 +53,25 @@ Atenção: Um usuário comum, consegue ter acesso de visualizaçaõ nas telas de
 
 Uma forma de senha muito segura, é usar o MFA ,fará que a pessoa não precise ficar trocando a senha toda horizontal
 Outlook 2010 não trabalha com MFA
+
+Condicional Access - Permitir acesso localizado ,ex: somente acessa se estiver na rede da empresa física 
+Comunidade 365
+
+Azure Policy - Recurso nativo, onde é permitido adicionar regras de compliance
+
+Existe várias categorias, odne eu posso colocar regras específicas para garantir que uma equipe poderá criar uma vm soemnte com ssd por exemplo
+
+Azure Monitor - Toda maquina do azure já vem com um agente esperando pra conectar com o azure monitor,
+para gravar os logs 
+Pago por gigas armazenado
+
+1- Log Analytics workspaces Deve se adicionar este recurso e depois vincula numa VM através das métricas
+
+-----Certificações----
+az900 - cobra muito saber o que faz 
+az104 - cai bastante network, prática 
+az303 - arquitetura, casos de uso ,planejjar e desenhar 
+
+forma de estudar 
+    - pegar o conteúdo fornecido pela microsoft, que pode cair na prova 
+    - focar mais nso tópicos que caem mais na prova
