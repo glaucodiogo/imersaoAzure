@@ -1,0 +1,55 @@
+--Azure backups 
+O backup no azure é de responsabilidade do cliente 
+azure backup service 
+    - benefícios:
+        - backup centralizado em nuvem por longo tempo,até mesmo de máquinas virtuais
+        Pago pelo dado armazenado e não pela transferência de tráfego
+        - trafego criptografado 
+        - é possível reter backup por até 99 anos 
+        - backup distribuido multiregião
+
+    Arquitetura backups VMS (direto do azure)
+        - existe um agent "backup extension" 
+            -  realiza o snapshot do disco, onde é possível recuperar os dados rapidamente
+Azure site recovery  - protege a VM em cenário de disaster
+
+Prática:
+    1 - criar um recovery service vault
+    2 - Definir como locally storage replication, porque se não ele fica distribuído por geolocalização
+    3 - Interessante usar soft delete
+    4 - no final baixamos um agent 
+    5 - agenda um job 
+    6 - toda a gestão fica no agente, se tiver mais servidores, complica ficar configurando
+* Tudo que for criar é interessante por uma tag, pra identificar cada recursos
+* Todo backup é full
+
+É possível também criar um backup e configurar diretamento pelo azure (workload)
+
+O backup é mapeado, posso restaurar um arquivo específico, ou a máquina toda
+
+---Azure Site Recovery
+    - Arquitetura
+        - Registrar o site recovery 
+        - Os dados são continuamento enviados para uma replica de cache
+        - Depois vai para o storage account
+
+    Implantando:
+        1 - Create recovery services 
+        2 - Alterar para local redundate
+
+--- Disaster Recovery Architecture 
+
+Gerenciamento de identidade no microsoft azure 
+Bruno - @consultorsenior
+
+-------Azure AD - 
+Palavra muito comum tenant = organização da empresa 
+Ideal que uma empresa tenha apenas um tenant
+*Muita atenção ao definir o tenant pois vai impactar o usuario que irá acessar a url do office 365 e demais serviços
+
+O Azure Ad Connect ajuda você manter o @emailempresa em todos os produtos 
+
+Atenção: Um usuário comum, consegue ter acesso de visualizaçaõ nas telas de administração
+
+Uma forma de senha muito segura, é usar o MFA ,fará que a pessoa não precise ficar trocando a senha toda horizontal
+Outlook 2010 não trabalha com MFA
